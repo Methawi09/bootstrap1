@@ -36,12 +36,12 @@
                 <br>
                 <div class="form-row">
                     <div class="form-group col-md-3">
-                        <label for="idcard">บัตรประชาชน*</label>
-                        <input type="text" class="form-control" id="idcard" maxlength="13" required>
+                        <label for="IDCard">บัตรประชาชน*</label>
+                        <input type="text" class="form-control" id="IDCard" maxlength="13" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">คำนำหน้า*</label>
-                        <select id="" class="form-control">
+                        <label for="prefix">คำนำหน้า*</label>
+                        <select id="prefix" class="form-control">
                             <option selected>เลือก</option>
                             <option>นาย</option>
                             <option>นาง</option>
@@ -49,16 +49,16 @@
                         </select>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="fname">ชื่อ*</label>
-                        <input type="text" class="form-control" id="fname" required>
+                        <label for="Fname">ชื่อ*</label>
+                        <input type="text" class="form-control" id="Fname" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="lname">นามสกุล*</label>
-                        <input type="text" class="form-control" id="สname" required>
+                        <label for="Lname">นามสกุล*</label>
+                        <input type="text" class="form-control" id="Lname" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">เพศ</label>
-                        <select id="" class="form-control">
+                        <label for="sex">เพศ</label>
+                        <select id="sex" class="form-control">
                             <option selected>เลือก</option>
                             <option>ชาย</option>
                             <option>หญิง</option>
@@ -66,8 +66,8 @@
                     </div>
 
                     <div class="form-group col-md-2">
-                        <label for="">ศาสนา</label>
-                        <select id="" class="form-control">
+                        <label for="religion">ศาสนา</label>
+                        <select id="religion" class="form-control">
                             <option selected>เลือก</option>
                             <option>พุทธ</option>
                             <option>อิสลาม</option>
@@ -75,28 +75,28 @@
                         </select>
                     </div>
                     <div class="form-group col-md-1">
-                        <label for="">บ้านเลขที่*</label>
-                        <input type="text" class="form-control" id="" required>
+                        <label for="number">บ้านเลขที่*</label>
+                        <input type="text" class="form-control" id="number" required>
                     </div>
                     <div class="form-group col-md-1">
-                        <label for="">หมู่ที่*</label>
-                        <input type="text" class="form-control" id="" required>
+                        <label for="moo">หมู่ที่*</label>
+                        <input type="text" class="form-control" id="moo" required>
                     </div>
                     <div class="form-group col-md-1">
-                        <label for="">ถนน*</label>
-                        <input type="text" class="form-control" id="" required>
+                        <label for="road">ถนน*</label>
+                        <input type="text" class="form-control" id="road" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">ตำบล/แขวง*</label>
-                        <input type="text" class="form-control" id="" required>
+                        <label for="district">ตำบล/แขวง*</label>
+                        <input type="text" class="form-control" id="district" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">อำเภอ/เขต*</label>
-                        <input type="text" class="form-control" id="" required>
+                        <label for="Sdistrict">อำเภอ/เขต*</label>
+                        <input type="text" class="form-control" id="Sdistrict" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">จังหวัด</label>
-                        <select id="" class="form-control">
+                        <label for="prov">จังหวัด</label>
+                        <select id="prov" class="form-control">
                             <option selected>เลือก</option>
                             <option>นครศรีธรรมราช</option>
                             <option>สุราษฎร์ธานี</option>
@@ -106,20 +106,20 @@
                         </select>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">รหัสไปรษณีย์*</label>
-                        <input type="text" class="form-control" id="" required>
+                        <label for="zip">รหัสไปรษณีย์*</label>
+                        <input type="text" class="form-control" id="zip" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">โทรทัพท์บ้าน*</label>
-                        <input type="tel" class="form-control" id="" required>
+                        <label for="phone">โทรทัพท์บ้าน*</label>
+                        <input type="tel" class="form-control" id="phone" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="">โทรทัพท์มือถือ*</label>
-                        <input type="tel" class="form-control" id="" required>
+                        <label for="tel">โทรทัพท์มือถือ*</label>
+                        <input type="tel" class="form-control" id="tel" required>
                     </div>
                 </div>
                 <div class="col-sm-2 control-label" required>
-                    สาขาที่สนใจ
+                    <label for="branch">สาขาที่สนใจ*</label>
                 </div>
                 <label class="checkbox">
                     <input type="checkbox" value=""> ITD (เทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล)
@@ -136,12 +136,34 @@
                 <label class="checkbox">
                     <input type="checkbox" value=""> COMM (นิเทศศาสตร์)
                 </label><br />
-                <input type="submit" id="btnsub" value="send" class="btn btn-primary " margin="center">
+                <input type="submit" id="btnSubmit" value="send" class="btn btn-primary " margin="center">
             </div>
             <br>
         </form>
     </div>
 
 </body>
+<script>
+    $("#btnSubmit").click(() => {
+        var data = $.parseJSON(`{
+            "IDCard": "${$("#IDCard").val()}", 
+            "prefix": "${$("#prefix").val()}", 
+            "Fname": "${$("#Fname").val()}", 
+            "Lname": "${$("#Lname").val()}",
+            "sex": "${$("#sex").val()}",
+            "religion": "${$("#religion").val()}",
+            "number": "${$("#number").val()}",
+            "moo": "${$("#moo").val()}",
+            "road": "${$("#road").val()}",
+            "district": "${$("#district").val()}",
+            "Sdistrict": "${$("#Sdistrict").val()}",
+            "prov": "${$("#prov").val()}",
+            "zip": "${$("#zip").val()}",
+            "phone": "${$("#phone").val()}",
+            "tel": "${$("#tel").val()}",
+            "branch": "${$("#branch").val()}"}`);
+        console.log(data);
+    });
+</script>
 
 </html>
